@@ -1,15 +1,22 @@
 {
   "name": "eslint-plugin-googleappsscript",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Environment for Google Apps Script development",
   "keywords": [
     "eslint",
     "eslintplugin",
     "eslint-plugin",
-    "google-apps-script"
+    "google-apps-script",
+    "google-apps",
+    "google",
+    "apps",
+    "script"
   ],
   "author": "Sasha Matijasic <sasha@selectnull.com>",
-  "homepage": "https://github.com/selectnull/eslint-plugin-googleappsscript",
+  "repository": "selectnull/eslint-plugin-googleappsscript",
+  "bugs": {
+    "url": "https://github.com/selectnull/eslint-plugin-googleappsscript/issues"
+  },
   "main": "lib/index.js",
   "scripts": {
     "test": "mocha tests --recursive"
