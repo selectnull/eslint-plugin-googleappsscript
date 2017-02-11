@@ -1,6 +1,8 @@
 # eslint-plugin-googleappsscript
 
-ESLint plugin for Google Apps Script environment.
+ESLint plugin for Google Apps Script that defines global variables
+exposed by Google Apps Script environment. It does not define any
+linting rules.
 
 ## Installation
 
@@ -21,17 +23,16 @@ $ npm install eslint-plugin-googleappsscript --save-dev
 ## Usage
 
 Add `googleappsscript` to the plugins section of your `.eslintrc`
-configuration file. You can omit the `eslint-plugin-` prefix:
+configuration file. You can omit the `eslint-plugin-` prefix. Also,
+add `googleappsscript/googleappsscript": true` to `env` section:
 
 ```json
 {
     "plugins": [
-        "googleappsscript"
-    ]
+      "googleappsscript"
+    ],
+    "env": {
+      "googleappsscript/googleappsscript": true
+    }
 }
 ```
-
-
-
-
-
