@@ -9,7 +9,7 @@
     "google-apps-script"
   ],
   "author": "Sasha Matijasic <sasha@selectnull.com>",
-  "homepage": "https://github.com/selectnull/eslint-plugin-googleappsscript"
+  "homepage": "https://github.com/selectnull/eslint-plugin-googleappsscript",
   "main": "lib/index.js",
   "scripts": {
     "test": "mocha tests --recursive"
