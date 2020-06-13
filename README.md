@@ -31,8 +31,8 @@ add `googleappsscript/googleappsscript": true` to `env` section:
     "plugins": [
       "googleappsscript"
     ],
-    "env": {
-      "googleappsscript/googleappsscript": true
-    }
+    "env": [
+        "googleappsscript/googleappsscript"
+    ]
 }
 ```
