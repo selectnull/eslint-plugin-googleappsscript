@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-googleappsscript",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Environment for Google Apps Script development",
   "keywords": [
     "eslint",
