@@ -22,6 +22,30 @@ $ npm install eslint-plugin-googleappsscript --save-dev
 
 ## Usage
 
+### ESLint flat config
+
+Add `import googleAppsScript from 'eslint-plugin-googleappsscript';` to `eslint.config.mjs`,
+then the block for linting `.gs` files could look like this:
+
+```json
+  // Google Apps Script files
+  {
+    files: ['*.gs'],
+    languageOptions: {
+      ecmaVersion: 2020,  // Google Apps Script is allegedly ES2018, but it does support ?., which requires 2020+
+      sourceType: 'script',
+      globals: {
+        ...googleAppsScript.environments.googleappsscript.globals,
+      },
+    },
+    rules: {
+      // ...
+    }
+  },
+```
+
+### ESLint legacy config
+
 Add `googleappsscript` to the plugins section of your `.eslintrc`
 configuration file. You can omit the `eslint-plugin-` prefix. Also,
 add `googleappsscript/googleappsscript": true` to `env` section:
